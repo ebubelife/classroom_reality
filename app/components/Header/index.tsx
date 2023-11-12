@@ -37,14 +37,14 @@ export default function Header() {
  */
 } 
 <div className="md:w-[200px] ml-auto flex justify-center"></div>
-<button className="py-2 px-4 rounded-2xl shadow-xl text-blue-500 text-sm font-light grid place-content-center hover:shadow-2xl">
+<Link href={"../../users/login"} className="py-2 px-4 rounded-2xl shadow-xl text-blue-500 text-sm font-light grid place-content-center hover:shadow-2xl">
  <p>Sign In</p>
-</button>
+</Link >
 
 
-<button className="py-2 bg-blue-500 ml-2 px-4 rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
+<Link href={"../../users/register"} className="py-2 bg-blue-500 ml-2 px-4 rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
  <p>Sign Up</p>
-</button>
+</Link>
 </div>
 
         </>
