@@ -7,7 +7,7 @@ export default function Footer() {
 
 
         <>
-        <div className='h-32'></div>
+        <div className='md:h-32 h-6'></div>
 
 
 
@@ -28,11 +28,11 @@ export default function Footer() {
 
    <div className="w-full text-white flex justify-center mt-6">
 
-    <div className="w-[500px] bg-white h-16 rounded-3xl p-4 flex">
+    <div className="md:w-[500px] w-full bg-white h-16 rounded-3xl p-4 flex">
 
-    <input type="text" className="w-[300px] text-zinc-600 text-sm outline-none" />
+    <input type="text" className="md:w-[300px] w-2/3 text-zinc-600 text-sm outline-none" />
 
-<button className="w-[200px] text-sm text-white py-4 flex justify-center items-center grid place-content-center rounded-xl bg-blue-500">Subscribe</button>
+<button className="md:w-[200px] w-1/3  text-sm text-white py-4 flex justify-center items-center grid place-content-center rounded-xl bg-blue-500">Subscribe</button>
 
     </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
 
 
 
-<div className="w-screen h-[300px] mt-auto grid place-content-center text-3xl md:px-10 grid-cols-4 gap-10">
+<div className="w-screen md:h-[300px] mt-auto grid place-content-center text-3xl md:px-10 md:grid-cols-4 md:gap-10 grid-cols-1">
 
   
 {/*footer 1 */}
@@ -85,6 +85,7 @@ Mauris eget felis et felis ultrices tempus at sed eros.</p>
         <li className="mt-2 text-zinc-500 cursor-pointer hover:text-blue-500">Blog</li>
         <li className="mt-2 text-zinc-500 cursor-pointer hover:text-blue-500">Media</li>
         <li className="mt-2 text-zinc-500 cursor-pointer hover:text-blue-500">Contact Us</li>
+
 
         </ul>
 

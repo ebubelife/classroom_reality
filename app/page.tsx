@@ -1,68 +1,37 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 export default function Home() {
   return (
     <main className="min-h-screen min-w-screen ">
-     <div className="w-screen py-4 md:px-20 shadow-sm flex items-center">
-     <div className="flex">
-     <img src="/images/home/cirlogo.svg" className='h-6 w-6' alt="t-logo" />
-     <p className='font-medium text-xl ml-2'>LOGO</p>
-     </div>
-
-     <div className="md:w-[400px] ml-auto">
-     <ul className="main-menu text-black flex space-x-6 justify-center ml-40 pt-2">
-  <li className="menu-item  text-sm cursor-pointer hover:text-zinc-600 font-light hover:text-blue-500 "><Link href={"../../about"}>Company</Link></li>
-  <li className="menu-item text-sm cursor-pointer hover:text-zinc-600 font-light hover:text-blue-500"><Link href={"../../"}>Classes</Link></li>
-  <li className="menu-item text-sm cursor-pointer hover:text-zinc-600 font-light hover:text-blue-500">Syllabus</li>
-  <li className="menu-item text-sm cursor-pointer hover:text-zinc-600 font-light hover:text-blue-500">Pricing</li>
-</ul>
-
-
-     </div>
-
-
-    {
-      /*
-
-      <img src="images/home/notificationnotification.svg" alt=""/>
-
+      <div className="md:block hidden">
+      <Header />
       </div>
-      */
-    } 
-<div className="md:w-[200px] ml-auto flex justify-center"></div>
-    <button className="py-2 px-4 rounded-2xl shadow-xl text-blue-500 text-sm font-light grid place-content-center hover:shadow-2xl">
-      <p>Sign In</p>
-    </button>
-
-
-    <button className="py-2 bg-blue-500 ml-2 px-4 rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
-      <p>Sign Up</p>
-    </button>
-     </div>
+   
 
      <div className='w-screen h-[400px]  md:px-12'>
 
-      <div className=" grid grid-cols-2 gap-4 py-10">
+      <div className=" grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-0 py-10">
 
       
       <div className=' h-full w-full md:px-10 md:py-20 '>
-      <p className='md:text-3xl font-normal '>Expert Mentors: Unlock<br></br> Quality Knowledge for <br></br> College <span className='text-yellow-400'>Success</span></p>
+      <p className='md:text-3xl text-xl font-normal md:text-left text-center '>Expert Mentors: Unlock<br></br> Quality Knowledge for <br></br> College <span className='text-yellow-400'>Success</span></p>
 
-      <img src="/images/home/Vector 2underline_stle.svg" alt="" className='w-40' style={{ marginLeft:`20%`}}  />
-      <img src="/images/home/Vector 2underline_stle.svg" alt="" className='w-40' style={{marginTop:`-9px`, marginLeft:`20%`}} />
+      <img src="/images/home/Vector 2underline_stle.svg" alt="" className='md:w-40 w-20' style={{ marginLeft:`20%`}}  />
+      <img src="/images/home/Vector 2underline_stle.svg" alt="" className='md:w-40 w-20' style={{marginTop:`-9px`, marginLeft:`20%`}} />
     
     
-      <p className='text-sm text-grey-300 font-light mt-4'>Find your expert mentor for upscale your knowledge. We provide personalized Guidance and in-depth Learning for College Students.</p>
+      <p className='md:text-sm text-xs text-grey-300 font-light mt-4'>Find your expert mentor for upscale your knowledge. We provide personalized Guidance and in-depth Learning for College Students.</p>
  
- <div className='w-full flex mt-4 '>
+ <div className='w-full md:flex mt-4 '>
 
- <button className="py-2 bg-blue-500 ml-2 px-2 w-32 rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
+ <button className="py-2 bg-blue-500 ml-2 px-2 md:w-32  w-full rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
       <p>Enter Code</p>
     </button>
 
-<div className=' h-10 w-48 items-center flex ml-8 '>
+<div className=' h-10 md:w-48 w-full items-center flex ml-8 md:mt-0 mt-4'>
 <img src="/images/home/Playplay_icon_hero.svg" alt="" />
 <p className='font-normal text-md ml-2'>Watch Later</p>
 
@@ -76,23 +45,23 @@ export default function Home() {
  <div className='grid grid-cols-3 gap-2 mt-6'>
 
   <div className=' '>
-    <p className="font-medium text-xl ">120</p>
+    <p className="font-medium md:text-xl text-sm ">120</p>
     <p className="text-xs text-zinc-600 ">Courses</p>
   </div>
 
   <div className=''>
-    <p className="font-medium text-xl ">500</p>
+    <p className="font-medium md:text-xl text-sm ">500</p>
     <p className="text-xs text-zinc-600 ">Tutors</p>
   </div>
 
   <div className=''>
-    <p className="font-medium text-xl">100K</p>
+    <p className="font-medium md:text-xl text-sm">100K</p>
     <p className="text-xs text-zinc-600 ">Students</p>
   </div>
 </div>
       </div>
 
-      <div className='h-full w-full relative flex grid place-content-center items-center'>
+      <div className='md:h-full md:w-full relative flex grid place-content-center items-center h-60 w-60 mt-0 mt-10'>
   <img src="images/home/cirhero_image_part.svg" alt="classroom-reality-hero-part" />
   <img src="images/home/dphero_part.svg" className='absolute top-0 left-0 z-10 w-full h-full' alt="classroom-reality-hero-part" />
 
@@ -105,7 +74,7 @@ export default function Home() {
 
      </div>
 
-     <div className='w-screen flex justify-center mt-32'>
+     <div className='w-screen flex justify-center md:mt-32 mt-60 '>
       <div>
       <p className='font-normal text-center text-2xl'> Why Choose Us?</p>
       <img src="/images/home/Vector 2underline_stle.svg" alt="" className='w-48'   />
@@ -117,7 +86,7 @@ export default function Home() {
      </div>
 
      <div className="w-screen md:px-16 mt-10">
-      <div className='grid grid-cols-3 gap-2'>
+      <div className='grid md:grid-cols-3 grid-cols-1 md:gap-2'>
 
         <div className="p-4">
 
@@ -187,7 +156,7 @@ export default function Home() {
 
      </div>
 
-     <div className='w-screen flex justify-center mt-20'>
+     <div className='w-screen flex justify-center md:mt-20 mt-8'>
       <div>
       <p className='font-normal text-center text-2xl'> All Subjects</p>
       <img src="/images/home/Vector 2underline_stle.svg" alt="" className='w-48'   />
@@ -201,7 +170,7 @@ export default function Home() {
 
 
      <div className="w-screen md:px-16 mt-10">
-      <div className='grid grid-cols-6 gap-2'>
+      <div className='grid md:grid-cols-6 grid-cols-2 gap-2'>
 
         <div className=" w-full shadow-xl p-2">
           <div className="justify-center flex">
@@ -340,18 +309,18 @@ export default function Home() {
 
 
 
-     <div className='w-screen md:px-10 mt-16'>
+     <div className='w-screen md:px-10 mt-16 md:block'>
 
 
      <div className="grid grid-cols-2 gap-4 w-full mentors-grid">
-  <div className="col-span-1 w-70 container-30  ">
+  <div className="col-span-1 w-70 container-30  cursor-pointer ">
 
   <div className="w-full h-[400px]  rounded-2xl" style={{ backgroundImage: 'url("images/home/Mask groupimg_one.png")', backgroundSize: 'cover' }}>
   
   <div className="flex flex-col h-full rounded-2xl">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8'>Oview Omoru</p>
+  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Oview Omoru</p>
   <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
@@ -366,12 +335,12 @@ export default function Home() {
 
     <div className='grid grid-cols-2 gap-4'>
 
-    <div className='h-48 w-full  rounded-xl' style={{ backgroundImage: 'url("images/home/Group 5img_two.png")', backgroundSize: 'cover' }}>
+    <div className='h-48 w-full  rounded-xl cursor-pointer' style={{ backgroundImage: 'url("images/home/Group 5img_two.png")', backgroundSize: 'cover' }}>
 
     <div className="flex flex-col h-full rounded-2xl">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8'>Chris Omerue</p>
+  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Chris Omerue</p>
   <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
@@ -385,10 +354,10 @@ export default function Home() {
 
 <div className='h-48 w-full rounded-xl' style={{ backgroundImage: 'url("images/home/Mask groupimg_three.png")', backgroundSize: 'cover' }}>
 
-    <div className="flex flex-col h-full rounded-2xl">
+    <div className="flex flex-col h-full rounded-2xl cursor-pointer">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8'>Patrick Ayeni</p>
+  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Patrick Ayeni</p>
   <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
@@ -401,10 +370,10 @@ export default function Home() {
 
 <div className='h-48 w-full rounded-xl' style={{ backgroundImage: 'url("images/home/Mask groupimg_five.png")', backgroundSize: 'cover' }}>
 
-    <div className="flex flex-col h-full rounded-2xl">
+    <div className="flex flex-col h-full rounded-2xl cursor-pointer">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8'>Ugo Nazo</p>
+  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Ugo Nazo</p>
   <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
@@ -417,10 +386,10 @@ export default function Home() {
 
 <div className='h-48 w-full rounded-xl' style={{ backgroundImage: 'url("images/home/Mask groupimg_four.png")', backgroundSize: 'cover' }}>
 
-    <div className="flex flex-col h-full rounded-2xl">
+    <div className="flex flex-col h-full rounded-2xl cursor-pointer">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8'>Ola Femi</p>
+  <p className='text-white font-medium text-xl px-8 hover:ml-2 '>Ola Femi</p>
   <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
@@ -463,7 +432,7 @@ export default function Home() {
 
      <div className="w-screen flex justify-center md:px-10 mt-10">
 
-      <div className='w-full grid grid-cols-3 gap-4'>
+      <div className='w-full grid md:grid-cols-3 grid-cols-1 md:gap-4 gap-0'>
 
 
         <div className="w-full p-4 shadow-xl shadow-2xl rounded-xl">
