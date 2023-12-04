@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -16,10 +16,16 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 export default function Login() {
 
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
 
   const handleTogglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
+  function move(){
+    router.push("../gateway")
+
+  }
 
 
 
@@ -128,6 +134,7 @@ export default function Login() {
 
       <button
         type="submit"
+        onClick={move}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Submit
