@@ -13,7 +13,7 @@ export default function Home() {
 
      <div className='w-screen h-[400px]  md:px-12'>
 
-      <div className=" grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-0 py-10">
+      <div className=" md:grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-0 py-10">
 
       
       <div className=' h-full w-full md:px-10 md:py-20 '>
@@ -23,15 +23,21 @@ export default function Home() {
       <img src="/images/home/Vector 2underline_stle.svg" alt="" className='md:w-40 w-20' style={{marginTop:`-9px`, marginLeft:`20%`}} />
     
     
-      <p className='md:text-sm text-xs text-grey-300 font-light mt-4'>Find your expert mentor for upscale your knowledge. We provide personalized Guidance and in-depth Learning for College Students.</p>
+      <p className='md:text-sm text-xs text-grey-300 font-light mt-4 md:text-left text-center'>Find your expert mentor for upscale your knowledge. We provide personalized Guidance and in-depth Learning for College Students.</p>
  
- <div className='w-full md:flex mt-4 '>
+ <div className='w-full md:flex mt-4  '>
 
- <button className="py-2 bg-blue-500 ml-2 px-2 md:w-32  w-full rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
+ <button className="w-20 py-2 bg-blue-500 ml-2 px-2 md:w-32  w-full rounded-2xl shadow-xl text-white text-sm font-light grid place-content-center hover:shadow-2xl">
       <p>Enter Code</p>
     </button>
 
-<div className=' h-10 md:w-48 w-full items-center flex ml-8 md:mt-0 mt-4'>
+<div className=' h-10 md:w-48 w-full items-center md:flex hidden ml-8 md:mt-0 mt-4 '>
+<img src="/images/home/Playplay_icon_hero.svg" alt="" />
+<p className='font-normal text-md ml-2'>Watch Later</p>
+
+</div>
+
+<div className=' h-10 md:w-48 w-screen items-center flex justify-center ml-8 md:mt-0 mt-4 md:hidden'>
 <img src="/images/home/Playplay_icon_hero.svg" alt="" />
 <p className='font-normal text-md ml-2'>Watch Later</p>
 
@@ -42,6 +48,8 @@ export default function Home() {
   
   
  </div>
+
+ <div className='md:block hidden w-full'>
  <div className='grid grid-cols-3 gap-2 mt-6'>
 
   <div className=' '>
@@ -59,11 +67,33 @@ export default function Home() {
     <p className="text-xs text-zinc-600 ">Students</p>
   </div>
 </div>
+</div>
+
+<div className='w-screen md:hidden block flex justify-center'>
+
+<div className='grid grid-cols-3 gap-6 mt-6'>
+
+<div className=' '>
+  <p className="font-medium md:text-xl text-sm ">120</p>
+  <p className="text-xs text-zinc-600 ">Courses</p>
+</div>
+
+<div className=''>
+  <p className="font-medium md:text-xl text-sm ">500</p>
+  <p className="text-xs text-zinc-600 ">Tutors</p>
+</div>
+
+<div className=''>
+  <p className="font-medium md:text-xl text-sm">100K</p>
+  <p className="text-xs text-zinc-600 ">Students</p>
+</div>
+</div>
+</div>
       </div>
 
       <div className='md:h-full md:w-full relative flex grid place-content-center items-center h-60 w-60 mt-0 mt-10'>
   <img src="images/home/cirhero_image_part.svg" alt="classroom-reality-hero-part" />
-  <img src="images/home/dphero_part.svg" className='absolute top-0 left-0 z-10 w-full h-full' alt="classroom-reality-hero-part" />
+  <img src="images/home/dphero_part.svg" className='absolute top-0 left-0 z-10 w-full h-full ml-20 md:ml-0' alt="classroom-reality-hero-part" />
 
 
 </div>
@@ -312,8 +342,8 @@ export default function Home() {
      <div className='w-screen md:px-10 mt-16 md:block'>
 
 
-     <div className="grid grid-cols-2 gap-4 w-full mentors-grid">
-  <div className="col-span-1 w-70 container-30  cursor-pointer ">
+     <div className="md:grid md:grid-cols-2 gap-4 w-full mentors-grid">
+  <div className="col-span-1 w-70 container-30  cursor-pointer md:block hidden ">
 
   <div className="w-full h-[400px]  rounded-2xl" style={{ backgroundImage: 'url("images/home/Mask groupimg_one.png")', backgroundSize: 'cover' }}>
   
@@ -331,7 +361,7 @@ export default function Home() {
 
    
   </div>
-  <div className="col-span-1 w-30 h-[400px] container-70 " >
+  <div className="md:col-span-1 md:w-30 h-[400px] md:container-70 px-1 md:px-0 " >
 
     <div className='grid grid-cols-2 gap-4'>
 
@@ -340,8 +370,8 @@ export default function Home() {
     <div className="flex flex-col h-full rounded-2xl">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Chris Omerue</p>
-  <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p className='text-white font-medium md:text-xl text-sm md:px-8 px-2 hover:ml-2'>Chris Omerue</p>
+  <p className='text-xs text-white md:px-8 px-2 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
   
@@ -357,8 +387,8 @@ export default function Home() {
     <div className="flex flex-col h-full rounded-2xl cursor-pointer">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Patrick Ayeni</p>
-  <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p className='text-white font-medium md:text-xl text-sm md:px-8 px-2 hover:ml-2'>Patrick Ayeni</p>
+  <p className='text-xs text-white md:px-8 px-2 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
   
@@ -373,8 +403,8 @@ export default function Home() {
     <div className="flex flex-col h-full rounded-2xl cursor-pointer">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8 hover:ml-2'>Ugo Nazo</p>
-  <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p className='text-white font-medium md:text-xl text-sm md:px-8 px-2 hover:ml-2'>Ugo Nazo</p>
+  <p className='text-xs text-white md:px-8 px-2 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
   
@@ -389,8 +419,8 @@ export default function Home() {
     <div className="flex flex-col h-full rounded-2xl cursor-pointer">
   <div className="h-full flex flex-col justify-end rounded-2xl" style={{ background: 'linear-gradient(to bottom, rgba(173, 216, 230, 0), rgba(0, 0, 0, 0.7))' }}>
 
-  <p className='text-white font-medium text-xl px-8 hover:ml-2 '>Ola Femi</p>
-  <p className='text-xs text-white px-8 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p className='text-white font-medium md:text-xl text-sm md:px-8 px-2 hover:ml-2 '>Ola Femi</p>
+  <p className='text-xs text-white md:px-8 px-2 mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   
   

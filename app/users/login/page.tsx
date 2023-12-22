@@ -17,15 +17,16 @@ export default function Login() {
 
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
+  function move(){
+    router.push("../gateway")
+
+  }
 
   const handleTogglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
 
-  function move(){
-    router.push("../gateway")
-
-  }
+ 
 
 
 
